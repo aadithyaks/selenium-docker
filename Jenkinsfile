@@ -1,8 +1,10 @@
 pipeline {
-    agent none
-    //master build executor should be set to 0
+    agent none   
     stages {
         stage('Build Jar') {
+            steps {
+                sh 'sudo su'
+            } 
             agent {
                 docker {
                     image 'maven:3-alpine'
