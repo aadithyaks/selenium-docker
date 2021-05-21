@@ -1,13 +1,10 @@
 pipeline {
     agent none   
     stages {        
-        stage('Give Permsns') { 
-            agent {
-                none
-                steps {
+        stage('Give Permsns') {
+            steps {
                     sh 'sudo su'
-                }                
-            }  
+            } 
         }    
         stage('Build Jar') {        
             agent {
