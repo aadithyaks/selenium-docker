@@ -3,6 +3,7 @@ pipeline {
     stages {        
         stage('Give Permsns') { 
             agent {
+                none
                 steps {
                     sh 'sudo su'
                 }                
