@@ -3,7 +3,7 @@ pipeline {
     stages {        
         stage('Give Permsns') {
             steps {
-                    sh 'sudo su'
+                sh 'sudo su'
             } 
         }    
         stage('Build Jar') {        
