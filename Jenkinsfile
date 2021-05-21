@@ -1,13 +1,9 @@
 pipeline {
     agent none   
-    stages {
-        stage('Grant Permisns') {  
-            steps {
-                sh 'sudo su'
-            }            
-        }
+    stages {        
         stage('Build Jar') {            
             agent {                
+                sh 'sudo su'
                 docker {
                         image 'maven:3-alpine'
                         args '-v /root/.m2:/root/.m2'
