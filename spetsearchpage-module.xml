@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="spetsearchpage-module" parallel="tests">
+    <test name="spetSearchPageTest_02">
+        <classes>
+            <class name="com.Demo.tests.AppSearchPageTest"/>
+        </classes>
+    </test>
+</suite>
